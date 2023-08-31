@@ -1,0 +1,254 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	font-family: 'Roboto Mono', monospace;
+}
+:root {
+	--main-color: #1f2a38;
+	--secondary-color: #fff;
+	--secondary-text-color: #577ff1;
+	--btn-color: #a6f6ff;
+}
+
+/* Style the header */
+.wrapper {
+	padding: 20px;
+	background-color: var(--main-color);
+	color: var(--secondary-color);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.left-side {
+	width: 35%;
+	height: 100vh;
+	background-color: var(--main-color);
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: 100px;
+}
+
+.left-side h1 {
+	color: var(--secondary-color);
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.job-description {
+	font-size: 1.2rem;
+	font-weight: 100;
+	margin-bottom: 10px;
+	color: var(--secondary-color);
+}
+.title-description {
+	font-size: 0.8rem;
+	color: var(--btn-color);
+}
+
+.menu {
+	margin-top: 25%;
+}
+
+.menu button {
+	font-family: 'Roboto Mono', monospace;
+	text-decoration: none;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	font-size: 1.3rem;
+	font-weight: 100;
+	border: none;
+	margin: 4% 0;
+	background: transparent;
+	color: var(--secondary-color);
+}
+.menu button:hover {
+	transform: scale(1.2, 1.1) translate(10px);
+	color: var(--btn-color);
+}
+
+#about-me {
+	display: inherit;
+}
+
+#my-work {
+	display: inherit;
+}
+
+#contact-me {
+	display: inherit;
+}
+
+.useful-links {
+	margin-top: 30%;
+}
+.useful-links a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.useful-links img {
+	width: 5%;
+	margin-right: 5%;
+	transition-duration: 0.3s;
+}
+.useful-links img:hover {
+	transform: rotate(360deg);
+}
+
+/* Style the right side */
+.right-side {
+	width: 75%;
+	margin-left: 45%; /* Ensure the right side doesn't overlap the left */
+	padding: 20px;
+	background-color: var(--main-color);
+	font-weight: 100;
+}
+@media (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+	.left-side {
+		width: 100%;
+		overflow-y: initial;
+	}
+}
+.description {
+	font-size: 0.9rem;
+	font-weight: 100;
+	line-height: 25px;
+	width: 90%;
+	margin: 100px auto;
+}
+.project {
+	width: 90%;
+	margin: 3% auto;
+	padding: 2%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10%;
+	border: 1px solid var(--main-color);
+	transition-duration: 0.1s;
+}
+.project:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 5px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.2px);
+	-webkit-backdrop-filter: blur(4.2px);
+}
+.project p {
+	font-size: 0.8em;
+}
+/* .project a {
+	margin: auto;
+} */
+.project a img {
+	transition-duration: 0.3s;
+	width: 100%;
+	height: 75%;
+	margin: 5%;
+}
+
+.project div {
+	margin: 0;
+	height: 80%;
+}
+.project div p span {
+	font-weight: 200;
+	font-size: 1.1rem;
+	color: var(--secondary-text-color);
+}
+.project span img {
+	width: 5%;
+	filter: invert(1);
+}
+.projects-link {
+	text-decoration: none;
+	color: var(--btn-color);
+	font-size: 0.8rem;
+	transition-duration: 0.3s;
+}
+.projects-link:hover {
+	letter-spacing: 3px;
+}
+
+.projects h2,
+.cv h2 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin: 15% 0 7% 0;
+	color: var(--secondary-text-color);
+	text-align: center;
+}
+
+.project,
+.cv-entry {
+	margin-bottom: 15px;
+}
+.cv-section {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	padding: 5%;
+}
+.cv-section h3 {
+	margin-bottom: 3%;
+}
+.cv-date {
+	font-weight: 100;
+	font-size: 0.8rem;
+	margin-top: 3%;
+}
+
+.li {
+	font-size: 0.8em;
+	margin-top: 2%;
+	line-height: 20px;
+}
+.li a {
+	text-decoration: none;
+	color: var(--btn-color);
+	font-weight: 700;
+}
+.li a:hover {
+	color: var(--secondary-color);
+}
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 300;
+	padding: 0.5%;
+	background-color: var(--secondary-color);
+	color: #000;
+	position: fixed;
+	bottom: 0;
+}
+#shadow {
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 50;
+	box-shadow: -6px 10px 200px 200px rgba(214, 214, 214, 0.079);
+	pointer-events: none;
+}
+#section1,
+#section2,
+#section3 {
+	scroll-margin-top: 110px;
+}
