@@ -80,6 +80,10 @@ body {
 	transform: scale(1.2, 1.1) translate(10px);
 	color: var(--btn-color);
 }
+.btn-scroll {
+	transform: scale(1.2, 1.1) translate(10px);
+	color: var(--btn-color);
+}
 
 #about-me {
 	display: inherit;
@@ -92,9 +96,13 @@ body {
 #contact-me {
 	display: inherit;
 }
-
+.get-in-contact {
+	font-weight: 100;
+	margin-bottom: 2%;
+	font-size: 0.7rem;
+}
 .useful-links {
-	margin-top: 30%;
+	margin-top: 25%;
 }
 .useful-links a {
 	text-decoration: none;
@@ -199,6 +207,9 @@ body {
 .project,
 .cv-entry {
 	margin-bottom: 15px;
+}
+.js-logo {
+	width: 12%;
 }
 .cv-section {
 	display: grid;
