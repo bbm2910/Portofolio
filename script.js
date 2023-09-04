@@ -31,4 +31,17 @@ contactBtn.addEventListener("click", () => {
 
 
 
+const err = document.querySelector(".error");
+const content = document.querySelector(".wrapper");
+const whatsappBtn = document.querySelector(".whatsapp-btn");
+const backToMain = document.querySelector(".back-to-main-btn");
+
+whatsappBtn.addEventListener("click", () => {
+    err.style.display = "block";
+    content.style.display = "none";
+})
+backToMain.addEventListener("click", () => {
+    err.style.display = "none";
+    content.style.display = "flex";
+})
 
