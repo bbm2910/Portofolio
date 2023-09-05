@@ -306,7 +306,7 @@ footer {
 	border: none;
 	background: var(--btn-color);
 	color: var(--main-color);
-	padding: 0.7%;
+	padding: 0.7% 2%;
 	border-radius: 0.3rem;
 	transition-duration: 0.3s;
 	font-family: 'Roboto Mono', monospace;
